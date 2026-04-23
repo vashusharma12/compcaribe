@@ -131,7 +131,7 @@ a:focus{box-shadow:inherit !important;}
 
 .category_block .category_item .category_image{width:60%;}
 .category_block .category_item .category_image img{width:100%;}
-.category_block .category_item .category_item_link{background:#fff; border:1px solid #D7D7D7; padding:20px 15px; border-radius:10px; box-shadow:0 1px 2px 0 rgba(0,0,0,.05); transition: all .3s cubic-bezier(0,0,.5,1);will-change:transform; text-decoration:none; display:flex;height: 100%;}
+.category_block .category_item .category_item_link{background:#fff; border:1px solid #D7D7D7; padding:20px 15px; border-radius:10px; box-shadow:0 1px 2px 0 rgba(0,0,0,.05); transition: all .3s cubic-bezier(0,0,.5,1);will-change:transform; text-decoration:none; display:flex;height: 100%;align-items: center;}
 .category_block .category_item .category_item_link:hover{transform:translateZ(0) translateY(0) scale(1.016); box-shadow: 0 3px 8px 0 rgba(0,0,0,.16); border-color:#C2285C;}
 
 .work_with_compcaribe{padding:50px 0px;}
