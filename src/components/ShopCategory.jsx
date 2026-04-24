@@ -70,7 +70,7 @@ function ShopCategory() {
         <div id="shop" className={`main_content ${isShopPage ? "shop_view" : ""}`}>
             <div className="product_page container mt-4">
                 <div className="row">                  
-                    <div className="col-md-2">
+                    <div className="col-md-4 col-lg-2">
                         <FilterSidebar
                             brands={brands}
                             selectedBrand={selectedBrand}
@@ -83,7 +83,7 @@ function ShopCategory() {
                     </div>
 
                
-                    <div className="col-md-10">
+                    <div className="col-md-8 col-lg-10">
 
                         <div className="head d-flex justify-content-between align-items-center mb-4">
 
@@ -138,7 +138,7 @@ function ShopCategory() {
                                         key={product.id}
                                         className={
                                             view === "grid"
-                                                ? "col-lg-3 col-md-4 col-sm-6  col-6 mb-4"
+                                                ? "col-lg-3 col-md-6 col-sm-6  col-6 mb-4"
                                                 : "col-12 mb-4"
                                         }
                                     >

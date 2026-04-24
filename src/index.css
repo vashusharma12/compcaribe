@@ -42,7 +42,7 @@ a:focus{box-shadow:inherit !important;}
 .header .header_top .view_tabs a span{clear:both; display:block; margin-top:-7px;font-size: 14px;}
 .header .header_top .view_tabs .rental{color:#c51f54;}
 .header .header_top .view_tabs .rental:before{content:""; background-image:url(../public/images/rental_icon.png); background-repeat:no-repeat; background-size:cover; display:inline-block; width:20px; height:20px;}
-.header .header_top .view_tabs .rental.active{background:#C2285C; color:#fff;}
+.header .header_top .view_tabs .rental.active{background:#C2285C !important; color:#fff !important;}
 .header .header_top .view_tabs .rental.active:before{filter:brightness(100);}
 .header .header_top .view_tabs .shop{color:#1E458A;}
 .header .header_top .view_tabs .shop:before{content:""; background-image:url(../public/images/shop_icon.png); background-repeat:no-repeat; background-size:cover; display:inline-block; width:20px; height:20px;}
@@ -491,6 +491,7 @@ justify-content:space-around; font-weight:bold;}
   .navbar .my_cart{padding: 5px 15px;position: absolute;top: -53px;right: 12px;width: auto;font-size: 20px;color: black;border-radius: 10px;}
   .navbar .my_cart .my_cart_head{background-image: none;display: none;}
   .mobile-cart-icon{display:block;}
+  
 
 
 }
