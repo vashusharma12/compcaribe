@@ -85,8 +85,8 @@ const HeaderRental = () => {
                     <div className="search_info">
                       <span
                         className={`search_title ${item.type === "rental"
-                            ? "text-rental"
-                            : "text-shop"
+                          ? "text-rental"
+                          : "text-shop"
                           }`}
                       >
                         {item.name}
@@ -123,9 +123,9 @@ const HeaderRental = () => {
       </div>
 
       <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="container">
+        <div className="container d-flex align-items-center position-relative">
 
-
+          {/* 🔥 TOGGLER (Mobile Left) */}
           <button
             className="navbar-toggler"
             type="button"
@@ -135,6 +135,7 @@ const HeaderRental = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
+          {/* 🔥 MENU */}
           <div className="collapse navbar-collapse" id="navbarContent">
             <ul className="navbar-nav gap-2">
               <li className="nav-item"><NavLink to="/laptop" className="nav-link">Laptop Rental</NavLink></li>
@@ -143,12 +144,14 @@ const HeaderRental = () => {
               <li className="nav-item"><NavLink to="/monitor" className="nav-link">Monitor Rental</NavLink></li>
               <li className="nav-item"><NavLink to="/printer" className="nav-link">Printer Rental</NavLink></li>
             </ul>
-
-            <Link to="/cart" className="my_cart">
-              <span className="my_cart_head">Your Cart</span>
-              <span className="cart-count">{cartItems.length}</span>
-            </Link>
           </div>
+
+          {/* 🔥 CART (Always Right) */}
+          <Link to="/cart" className="my_cart">
+            <span className="mobile-cart-icon"><i className="fa-solid fa-cart-shopping"></i></span>
+            <span className="my_cart_head">Your Cart</span>
+            <span className="cart-count">{cartItems.length}</span>
+          </Link>
 
         </div>
       </nav>
