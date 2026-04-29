@@ -122,19 +122,19 @@ const ContactContent = () => {
                                 <div className="col-md-12">
                                     <div className="card customer_services p-3">
                                         <h5>
-                                            <img src="/images/shop/support_icon.svg" alt="" /> Customer Service Hours
+                                            <img src="/images/support_icon.svg" alt="" /> Customer Service Hours
                                         </h5>
 
                                         <div className="block_row">
                                             <div className="block_label">
-                                                <img src="/images/shop/clock_icon.svg" alt="" /> Monday-Friday:
+                                                <img src="/images/clock_icon.svg" alt="" /> Monday-Friday:
                                             </div>
                                             <div className="block_hour">09:00am - 5:30pm (BST)</div>
                                         </div>
 
                                         <div className="block_row">
                                             <div className="block_label">
-                                                <img src="/images/shop/clock_icon.svg" alt="" /> Saturday:
+                                                <img src="/images/clock_icon.svg" alt="" /> Saturday:
                                             </div>
                                             <div className="block_hour">09:00am – 2:00pm (BST)</div>
                                         </div>

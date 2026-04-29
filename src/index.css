@@ -477,7 +477,7 @@ justify-content:space-around; font-weight:bold;}
   .product_details .detail_info_top .product_cta{width:100%;}
   .recommendations .flex_container{flex-direction:column;}
   .recommendations .product_item{width:100%;}
-  .contact_us .contact_info .customer_services .block_row{width:100%;}
+  .contact_us .contact_info .customer_services .block_row{width:100%;flex-wrap: wrap;}
   .inner_banner img{height: 200px; object-fit: cover;}
   .product_block .product_item .product_img img{height: 100px; width: 100px;}
   .product_block .product_item h4{font-size: 14px;}
@@ -488,10 +488,13 @@ justify-content:space-around; font-weight:bold;}
   .mobile-filter{position: absolute; top: 10px;right: 25px;}
   .mobile-filter button{background-color: white; border: none;padding: 8px 16px;font-weight: 600; font-size: 16px;}
   .header{position: relative;}
-  .navbar .my_cart{padding: 5px 15px;position: absolute;top: -53px;right: 12px;width: auto;font-size: 20px;color: black;border-radius: 10px;}
+  .navbar .my_cart{padding: 5px 15px;position: absolute;top: -53px;right: 12px;width: auto;font-size: 20px;color: black;border-radius: 10px;z-index:9999;}
   .navbar .my_cart .my_cart_head{background-image: none;display: none;}
   .mobile-cart-icon{display:block;}
-  
+  .page_title h2{font-size: 24px;}
+  .shop_view .category_block .category_item h3{text-align: left;}
+  .shop_view .category_block .category_item .category_info ul{text-align: left;}
+  .navbar-nav{margin-top: 20px;}
 
 
 }

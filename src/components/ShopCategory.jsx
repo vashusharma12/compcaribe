@@ -87,7 +87,7 @@ function ShopCategory() {
 
                         <div className="head d-flex justify-content-between align-items-center mb-4">
 
-                            <h3 className="text-capitalize fw-bold">
+                            <h3 className="text-capitalize m-0 fw-bold">
                                 {isHomePage
                                     ? "Rental Products"
                                     : normalizedCategory}
