@@ -495,6 +495,14 @@ justify-content:space-around; font-weight:bold;}
   .shop_view .category_block .category_item h3{text-align: left;}
   .shop_view .category_block .category_item .category_info ul{text-align: left;}
   .navbar-nav{margin-top: 20px;}
+  .header .header_top .search_dropdown .search_item span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search_info br{display: none;}
 
 
 }
@@ -505,6 +513,7 @@ justify-content:space-around; font-weight:bold;}
   .header .header_top .phone_no span{display:none;}
   .header .header_top .my_account span {display: none;}
   .navbar .my_cart{margin-left: 0px;width: 140px;}
+  .header .header_top .search_dropdown{width: 400px; right: -100px;}
 
 }
 @media (max-width: 768px) {
