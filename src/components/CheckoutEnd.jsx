@@ -40,7 +40,7 @@ const CheckoutEnd = () => {
 
     const total = subtotal + deposit - discount;
 
-    // 🔄 HANDLE CHANGE
+
     const handleChange = (e) => {
         const { name, value } = e.target;
 
@@ -57,7 +57,7 @@ const CheckoutEnd = () => {
         setTouched({ ...touched, [name]: true });
     };
 
-    // 🎟 APPLY COUPON
+
     const handleApplyCoupon = () => {
         if (coupon.trim().toUpperCase() === "FLAT10") {
             const discountValue = subtotal * 0.1;
@@ -69,7 +69,7 @@ const CheckoutEnd = () => {
         }
     };
 
-    // ✅ FIELD VALIDATION
+
     const validateField = (name, value) => {
         switch (name) {
             case "firstName":
@@ -109,7 +109,7 @@ const CheckoutEnd = () => {
         return newErrors;
     };
 
-    // 🚀 SUBMIT
+
     const handleSubmit = () => {
         const newErrors = validateForm();
 
@@ -391,3 +391,4 @@ const CheckoutEnd = () => {
 };
 
 export default CheckoutEnd;
+
