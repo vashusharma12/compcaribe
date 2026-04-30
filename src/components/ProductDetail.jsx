@@ -1,14 +1,14 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import products from "../data/products";
 import { useState, useContext } from "react";
-import { CartContext } from "../context/CartContext"; // ✅ IMPORT CONTEXT
+import { CartContext } from "../context/CartContext";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const navigate = useNavigate(); // ✅ NAVIGATE
-  const { addToCart } = useContext(CartContext); // ✅ GET FUNCTION
+  const navigate = useNavigate();
+  const { addToCart } = useContext(CartContext);
 
-  const product = products.find(p => p.id === parseInt(id));
+  const product = products.find((p) => p.id === parseInt(id));
 
   const [selectedDuration, setSelectedDuration] = useState("1 Month");
   const [quantity, setQuantity] = useState(1);
@@ -39,7 +39,11 @@ const ProductDetail = () => {
         {/* LEFT */}
         <div className="col-md-6">
           <div className="large_image mb-3">
-            <img src={product.image} alt={product.name} className="img-fluid" />
+            <img
+              src={product.image}
+              alt={product.name}
+              className="img-fluid"
+            />
           </div>
 
           <div className="d-flex gap-2">
@@ -48,7 +52,11 @@ const ProductDetail = () => {
                 key={i}
                 src={product.image}
                 alt=""
-                style={{ width: "60px", cursor: "pointer", border: "1px solid #ddd" }}
+                style={{
+                  width: "60px",
+                  cursor: "pointer",
+                  border: "1px solid #ddd",
+                }}
               />
             ))}
           </div>
@@ -57,12 +65,20 @@ const ProductDetail = () => {
         {/* RIGHT */}
         <div className="col-md-6">
 
-          <h6 className="text-muted">{product.brand || "Brand Name"}</h6>
+          <h6 className="text-muted">
+            {product.brand || "Brand Name"}
+          </h6>
+
           <h4>{product.name}</h4>
 
           <div className="rating mb-2">
             {Array.from({ length: 5 }).map((_, i) => (
-              <span key={i} className={`fa fa-star ${i < product.rating ? "checked" : ""}`}></span>
+              <span
+                key={i}
+                className={`fa fa-star ${
+                  i < product.rating ? "checked" : ""
+                }`}
+              ></span>
             ))}
             <span className="ms-2">({product.reviews})</span>
           </div>
@@ -76,7 +92,7 @@ const ProductDetail = () => {
             <li>Verified product</li>
           </ul>
 
-          {/* RENTAL */}
+          {/* RENTAL PRODUCT */}
           {product.type === "rental" ? (
             <div className="rent_box border p-3 rounded">
 
@@ -86,8 +102,15 @@ const ProductDetail = () => {
                 {["6 Months", "3 Months", "2 Months", "1 Month"].map((d) => (
                   <div
                     key={d}
-                    className={`p-2 border mb-2 ${selectedDuration === d ? "bg-rental text-white" : ""}`}
-                    style={{ cursor: "pointer", borderRadius: "5px" }}
+                    className={`p-2 border mb-2 ${
+                      selectedDuration === d
+                        ? "bg-rental text-white"
+                        : ""
+                    }`}
+                    style={{
+                      cursor: "pointer",
+                      borderRadius: "5px",
+                    }}
                     onClick={() => setSelectedDuration(d)}
                   >
                     {d}
@@ -97,17 +120,21 @@ const ProductDetail = () => {
 
               <div className="mt-3">
                 <label>Quantity</label>
+
                 <input
                   type="number"
                   min="1"
                   className="form-control"
                   value={quantity}
-                  onChange={(e) => setQuantity(Number(e.target.value))}
+                  onChange={(e) =>
+                    setQuantity(Number(e.target.value))
+                  }
                 />
               </div>
 
               <h4 className="mt-3">
                 £{totalPrice}
+
                 <span className="fs-6">
                   ({finalPricePerMonth} × {safeQuantity}) / Month
                 </span>
@@ -115,7 +142,11 @@ const ProductDetail = () => {
 
               {selectedDuration !== "1 Month" && (
                 <div className="text-success small">
-                  You save {Math.round(basePrice - finalPricePerMonth)} per item
+                  You save{" "}
+                  {Math.round(
+                    basePrice - finalPricePerMonth
+                  )}{" "}
+                  per item
                 </div>
               )}
 
@@ -123,7 +154,6 @@ const ProductDetail = () => {
                 🚚 Delivery within 24 hours
               </div>
 
-              {/* ✅ FINAL FIXED BUTTON */}
               <button
                 className="btn btn-rental w-100"
                 onClick={() => {
@@ -133,7 +163,8 @@ const ProductDetail = () => {
                     price: finalPricePerMonth,
                     image: product.image,
                     quantity: safeQuantity,
-                    duration: selectedDuration
+                    duration: selectedDuration,
+                    type: product.type, // 
                   });
 
                   navigate("/cart");
@@ -141,10 +172,11 @@ const ProductDetail = () => {
               >
                 Add To Cart →
               </button>
-
             </div>
           ) : (
+            /* SHOP PRODUCT */
             <div className="shop_box border p-3 rounded">
+
               <h3>£{product.price}</h3>
 
               {product.oldPrice && (
@@ -162,10 +194,11 @@ const ProductDetail = () => {
                     price: product.price,
                     image: product.image,
                     quantity: 1,
-                    duration: null // ✅ not needed for shop
+                    duration: null,
+                    type: product.type,
                   });
 
-                  navigate("/shop-index/cart"); // ✅ go to shop cart
+                  navigate("/shop-index/cart");
                 }}
               >
                 Add To Cart →
