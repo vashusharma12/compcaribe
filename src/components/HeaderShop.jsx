@@ -12,6 +12,13 @@ const HeaderShop = () => {
 
   const navigate = useNavigate();
 
+  const closeNavbar = () => {
+    const navbar = document.getElementById("navbarLightExample");
+
+    if (navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+    }
+  };
 
   const handleSearch = (value) => {
     setSearchTerm(value);
@@ -27,7 +34,6 @@ const HeaderShop = () => {
 
     setSuggestions(filtered.slice(0, 5));
   };
-
 
   const handleSelect = (product) => {
     setSearchTerm("");
@@ -45,23 +51,31 @@ const HeaderShop = () => {
       <div className="container">
         <div className="header_top">
 
-          {/* LOGO */}
           <div className="logo">
             <Link to="/">
               <img src={logo} alt="" />
             </Link>
           </div>
 
-          {/* TABS */}
           <div className="view_tabs">
-            <NavLink to="/" className={({ isActive }) => isActive ? "rental active" : "rental"}>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "rental active" : "rental"
+              }
+            >
               <span>Rental</span>
             </NavLink>
-            <NavLink to="/shop-index" className={({ isActive }) => isActive ? "shop active" : "shop"}>
+
+            <NavLink
+              to="/shop-index"
+              className={({ isActive }) =>
+                isActive ? "shop active" : "shop"
+              }
+            >
               <span>Shop</span>
             </NavLink>
           </div>
-
 
           <div className="search_bar">
             <input
@@ -88,13 +102,16 @@ const HeaderShop = () => {
 
                     <div className="search_info">
                       <span
-                        className={`search_title ${item.type === "rental"
-                          ? "text-rental"
-                          : "text-shop"
-                          }`}
+                        className={`search_title ${
+                          item.type === "rental"
+                            ? "text-rental"
+                            : "text-shop"
+                        }`}
                       >
                         {item.name}
-                      </span><br></br>
+                      </span>
+
+                      <br />
 
                       <small className="text-muted">
                         £{item.price}
@@ -109,7 +126,10 @@ const HeaderShop = () => {
 
           <div className="cta_btn">
             <div className="phone_no">
-              <a className="btn btn-outline-secondary" href="tel:+18495172592">
+              <a
+                className="btn btn-outline-secondary"
+                href="tel:+18495172592"
+              >
                 <i className="fa-solid fa-phone-volume"></i>
                 <span> +1 849 517 2592</span>
               </a>
@@ -139,40 +159,75 @@ const HeaderShop = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarLightExample">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarLightExample"
+            >
               <ul className="navbar-nav gap-2">
+
                 <li className="nav-item">
-                  <NavLink to="/shop-index/monitor-shop" className="nav-link">
+                  <NavLink
+                    to="/shop-index/monitor-shop"
+                    className="nav-link"
+                    onClick={closeNavbar}
+                  >
                     Monitors & Displays
                   </NavLink>
                 </li>
+
                 <li className="nav-item">
-                  <NavLink to="/shop-index/desktop-shop" className="nav-link">
+                  <NavLink
+                    to="/shop-index/desktop-shop"
+                    className="nav-link"
+                    onClick={closeNavbar}
+                  >
                     Desktop
                   </NavLink>
                 </li>
+
                 <li className="nav-item">
-                  <NavLink to="/shop-index/laptop-shop" className="nav-link">
+                  <NavLink
+                    to="/shop-index/laptop-shop"
+                    className="nav-link"
+                    onClick={closeNavbar}
+                  >
                     Laptops
                   </NavLink>
                 </li>
+
                 <li className="nav-item">
-                  <NavLink to="/shop-index/servers-shop" className="nav-link">
+                  <NavLink
+                    to="/shop-index/servers-shop"
+                    className="nav-link"
+                    onClick={closeNavbar}
+                  >
                     Servers & Racks
                   </NavLink>
                 </li>
+
                 <li className="nav-item">
-                  <NavLink to="/shop-index/office-shop" className="nav-link">
+                  <NavLink
+                    to="/shop-index/office-shop"
+                    className="nav-link"
+                    onClick={closeNavbar}
+                  >
                     Office Components
                   </NavLink>
                 </li>
+
               </ul>
             </div>
 
             <Link to="/cart" className="my_cart">
-              <span className="mobile-cart-icon"><i className="fa-solid fa-cart-shopping"></i></span>
+              <span className="mobile-cart-icon">
+                <i className="fa-solid fa-cart-shopping"></i>
+              </span>
+
               <span className="my_cart_head">Your Cart</span>
-              <span className="cart-count">{cartItems.length}</span>
+
+              <span className="cart-count">
+                {cartItems.length}
+              </span>
             </Link>
 
           </div>
