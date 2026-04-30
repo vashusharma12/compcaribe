@@ -1,7 +1,7 @@
 const WhyChooseUs = () => {
     return (
         <div>
-            <section className="aboutus container">
+            <section className="aboutus shop_view container">
             <div className="why_chooseus">
                 <div className="page_title"><h2>Why Choose Us</h2></div>
                 <div className="flex_container">

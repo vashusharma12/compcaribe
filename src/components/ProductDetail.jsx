@@ -75,9 +75,8 @@ const ProductDetail = () => {
             {Array.from({ length: 5 }).map((_, i) => (
               <span
                 key={i}
-                className={`fa fa-star ${
-                  i < product.rating ? "checked" : ""
-                }`}
+                className={`fa fa-star ${i < product.rating ? "checked" : ""
+                  }`}
               ></span>
             ))}
             <span className="ms-2">({product.reviews})</span>
@@ -102,11 +101,10 @@ const ProductDetail = () => {
                 {["6 Months", "3 Months", "2 Months", "1 Month"].map((d) => (
                   <div
                     key={d}
-                    className={`p-2 border mb-2 ${
-                      selectedDuration === d
+                    className={`p-2 border mb-2 ${selectedDuration === d
                         ? "bg-rental text-white"
                         : ""
-                    }`}
+                      }`}
                     style={{
                       cursor: "pointer",
                       borderRadius: "5px",
@@ -186,7 +184,10 @@ const ProductDetail = () => {
               )}
 
               <button
-                className="btn btn-primary w-100 mt-3"
+                className={`btn ${product.type === "rental"
+                    ? "btn-primary"
+                    : "btn-secondary"
+                  } w-100 mt-3`}
                 onClick={() => {
                   addToCart({
                     id: product.id,
@@ -198,7 +199,11 @@ const ProductDetail = () => {
                     type: product.type,
                   });
 
-                  navigate("/shop-index/cart");
+                  navigate(
+                    product.type === "rental"
+                      ? "/cart"
+                      : "/shop-index/cart"
+                  );
                 }}
               >
                 Add To Cart →

@@ -397,6 +397,8 @@ justify-content:space-around; font-weight:bold;}
 .shop_view .recommendations .product_item .product_info h3 a{color:#393939;text-decoration:none;}
 .shop_view .recommendations .flex_container{display:flex; gap:15px;}
 
+.shop_view .page_title h2{color:#1E458A;}
+.shop_view .page_title h2::after{background-color:#1E458A;}
 .shop_view .rent_cart .head{display:flex;}
 .shop_view .rent_cart .head .cart_value{margin-left:auto;}
 .shop_view .rent_cart .rent_cart_info .cart_product_card .product_info .qty{margin-left:inherit;align-items: center; width:160px; gap:10px; display:flex;}

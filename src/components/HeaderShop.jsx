@@ -12,7 +12,7 @@ const HeaderShop = () => {
 
   const navigate = useNavigate();
 
-  // 🔍 SEARCH
+
   const handleSearch = (value) => {
     setSearchTerm(value);
 
@@ -28,7 +28,7 @@ const HeaderShop = () => {
     setSuggestions(filtered.slice(0, 5));
   };
 
-  // 👉 SELECT
+
   const handleSelect = (product) => {
     setSearchTerm("");
     setSuggestions([]);
@@ -62,7 +62,7 @@ const HeaderShop = () => {
             </NavLink>
           </div>
 
-          {/* 🔥 SEARCH BAR */}
+
           <div className="search_bar">
             <input
               type="text"
@@ -76,7 +76,6 @@ const HeaderShop = () => {
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
 
-            {/* 🔥 DROPDOWN */}
             {suggestions.length > 0 && (
               <div className="search_dropdown">
                 {suggestions.map((item) => (
@@ -108,7 +107,6 @@ const HeaderShop = () => {
             )}
           </div>
 
-          {/* CTA */}
           <div className="cta_btn">
             <div className="phone_no">
               <a className="btn btn-outline-secondary" href="tel:+18495172592">
@@ -118,7 +116,7 @@ const HeaderShop = () => {
             </div>
 
             <div className="my_account">
-              <button className="btn btn-primary">
+              <button className="btn btn-secondary">
                 <i className="fa-solid fa-user"></i>
                 <span> Account</span>
               </button>
@@ -128,12 +126,10 @@ const HeaderShop = () => {
         </div>
       </div>
 
-      {/* SHOP NAV */}
       <div id="shop" className="main_content shop_view">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container d-flex align-items-center position-relative">
 
-            {/* 🔥 TOGGLER */}
             <button
               className="navbar-toggler"
               type="button"
@@ -143,7 +139,6 @@ const HeaderShop = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            {/* 🔥 MENU */}
             <div className="collapse navbar-collapse" id="navbarLightExample">
               <ul className="navbar-nav gap-2">
                 <li className="nav-item">
@@ -174,7 +169,6 @@ const HeaderShop = () => {
               </ul>
             </div>
 
-            {/* 🔥 CART (OUTSIDE COLLAPSE) */}
             <Link to="/cart" className="my_cart">
               <span className="mobile-cart-icon"><i className="fa-solid fa-cart-shopping"></i></span>
               <span className="my_cart_head">Your Cart</span>
