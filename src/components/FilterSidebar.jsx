@@ -33,7 +33,7 @@ function FilterSidebar({
 
   return (
     <>
-      <div className="d-md-none mb-3 mobile-filter">
+      <div className="d-md-none mobile-filter">
         <button
           className="filter-btn d-flex justify-content-between align-items-center"
           onClick={() => setShowFilter(!showFilter)}
