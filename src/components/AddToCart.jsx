@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const AddToCart = () => {
   const { cartItems, removeFromCart, updateQuantity } = useContext(CartContext);
 
-  // ✅ TOTAL (ALL PRODUCTS)
   const totalCost = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0
@@ -13,7 +12,6 @@ const AddToCart = () => {
 
   const shipping = cartItems.length > 0 ? 4.9 : 0;
 
-  // ✅ ONLY RENTAL DEPOSIT
   const deposit = cartItems.reduce((total, item) => {
     if (item.type === "rental") {
       return total + 17 * item.quantity;
@@ -22,6 +20,8 @@ const AddToCart = () => {
   }, 0);
 
   const total = totalCost + shipping + deposit;
+
+  const isCartEmpty = cartItems.length === 0;
 
   return (
     <div className="container py-4">
@@ -32,7 +32,7 @@ const AddToCart = () => {
           <div className="card p-3 mb-3">
             <h4 className="fw-bold mb-3">Cart</h4>
 
-            {cartItems.length === 0 ? (
+            {isCartEmpty ? (
               <p>Your cart is empty</p>
             ) : (
               cartItems.map((item) => (
@@ -40,17 +40,19 @@ const AddToCart = () => {
                   key={item.id}
                   className="d-flex align-items-center border-bottom py-3"
                 >
-
                   <img
                     src={item.image}
                     alt=""
-                    style={{ width: "100px", height: "80px", objectFit: "contain" }}
+                    style={{
+                      width: "100px",
+                      height: "80px",
+                      objectFit: "contain"
+                    }}
                   />
 
                   <div className="ms-3 flex-grow-1">
                     <h6 className="fw-semibold">{item.name}</h6>
 
-                    {/* RENTAL ONLY */}
                     {item.type === "rental" && item.duration && (
                       <div className="small text-muted">
                         Rental Tenure: {item.duration}
@@ -87,7 +89,6 @@ const AddToCart = () => {
                       </button>
                     </div>
                   </div>
-
                 </div>
               ))
             )}
@@ -113,8 +114,8 @@ const AddToCart = () => {
             {deposit > 0 && (
               <div className="d-flex justify-content-between mb-2">
                 <span>
-                  Refundable Deposit{" "}
-                  <small className="text-muted"><br></br>
+                  Refundable Deposit
+                  <small className="text-muted d-block">
                     (charged for each rental product)
                   </small>
                 </span>
@@ -129,9 +130,18 @@ const AddToCart = () => {
               <span>£{total.toFixed(2)}</span>
             </div>
 
-            <Link to="/checkout" className="btn btn-rental w-100">
-              Continue to checkout →
-            </Link>
+            {isCartEmpty ? (
+              <button
+                className="btn btn-secondary w-100"
+                disabled
+              >
+                Cart is Empty
+              </button>
+            ) : (
+              <Link to="/checkout" className="btn btn-rental w-100">
+                Continue to checkout →
+              </Link>
+            )}
 
           </div>
         </div>
