@@ -1,4 +1,10 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import {
+  Link,
+  NavLink,
+  useNavigate,
+  useLocation
+} from "react-router-dom";
+
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import logo from "../assets/logo.png";
@@ -11,6 +17,7 @@ const HeaderRental = () => {
   const [suggestions, setSuggestions] = useState([]);
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   const closeNavbar = () => {
     const navbar = document.getElementById("navbarContent");
@@ -58,10 +65,13 @@ const HeaderRental = () => {
           </div>
 
           <div className="view_tabs">
+
             <NavLink
               to="/"
-              className={({ isActive }) =>
-                isActive ? "rental active" : "rental"
+              className={() =>
+                location.pathname.startsWith("/shop-index")
+                  ? "rental"
+                  : "rental active"
               }
             >
               <span>Rental</span>
@@ -69,12 +79,15 @@ const HeaderRental = () => {
 
             <NavLink
               to="/shop-index"
-              className={({ isActive }) =>
-                isActive ? "shop active" : "shop"
+              className={() =>
+                location.pathname.startsWith("/shop-index")
+                  ? "shop active"
+                  : "shop"
               }
             >
               <span>Shop</span>
             </NavLink>
+
           </div>
 
           <div className="search_bar">
