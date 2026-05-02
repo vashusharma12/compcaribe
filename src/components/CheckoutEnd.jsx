@@ -139,15 +139,11 @@ const CheckoutEnd = () => {
         formData.postalCode;
 
     return (
-        <div className="container my-5">
+        <div className="container my-5 checkout">
             <div className="row">
-
-                {/* LEFT */}
                 <div className="col-md-7">
                     <h4 className="mb-3 fw-bold">Billing Details</h4>
-
                     <div className="card p-4 shadow-sm">
-
                         <div className="row">
                             <div className="col-md-6 mb-3">
                                 <input name="firstName"
@@ -158,7 +154,6 @@ const CheckoutEnd = () => {
                                 />
                                 <div className="invalid-feedback">{errors.firstName}</div>
                             </div>
-
                             <div className="col-md-6 mb-3">
                                 <input name="lastName"
                                     className={`form-control ${touched.lastName && errors.lastName ? "is-invalid" : ""}`}
@@ -169,7 +164,6 @@ const CheckoutEnd = () => {
                                 <div className="invalid-feedback">{errors.lastName}</div>
                             </div>
                         </div>
-
                         <div className="mb-3">
                             <input name="email"
                                 className={`form-control ${touched.email && errors.email ? "is-invalid" : ""}`}
@@ -179,7 +173,6 @@ const CheckoutEnd = () => {
                             />
                             <div className="invalid-feedback">{errors.email}</div>
                         </div>
-
                         <div className="mb-3">
                             <input name="phone"
                                 className={`form-control ${touched.phone && errors.phone ? "is-invalid" : ""}`}
@@ -189,23 +182,18 @@ const CheckoutEnd = () => {
                             />
                             <div className="invalid-feedback">{errors.phone}</div>
                         </div>
-
                         <div className="mb-3">
                             <input name="address1" className="form-control" placeholder="Address Line 1" onChange={handleChange} />
                         </div>
-
                         <div className="mb-3">
                             <input name="address2" className="form-control" placeholder="Address Line 2" onChange={handleChange} />
                         </div>
-
                         <div className="mb-3">
                             <input name="landmark" className="form-control" placeholder="Landmark" onChange={handleChange} />
                         </div>
-
                         <div className="mb-3">
                             <textarea name="instructions" className="form-control" placeholder="Delivery Instructions" onChange={handleChange}></textarea>
                         </div>
-
                         <div className="row">
                             <div className="col-md-6 mb-3">
                                 <input name="city"
@@ -216,7 +204,6 @@ const CheckoutEnd = () => {
                                 />
                                 <div className="invalid-feedback">{errors.city}</div>
                             </div>
-
                             <div className="col-md-6 mb-3">
                                 <input name="state"
                                     className={`form-control ${touched.state && errors.state ? "is-invalid" : ""}`}
@@ -227,7 +214,6 @@ const CheckoutEnd = () => {
                                 <div className="invalid-feedback">{errors.state}</div>
                             </div>
                         </div>
-
                         <div className="row">
                             <div className="col-md-6 mb-3">
                                 <input name="country"
@@ -238,7 +224,6 @@ const CheckoutEnd = () => {
                                 />
                                 <div className="invalid-feedback">{errors.country}</div>
                             </div>
-
                             <div className="col-md-6 mb-3">
                                 <input name="postalCode"
                                     className={`form-control ${touched.postalCode && errors.postalCode ? "is-invalid" : ""}`}
@@ -249,21 +234,13 @@ const CheckoutEnd = () => {
                                 <div className="invalid-feedback">{errors.postalCode}</div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                {/* RIGHT */}
                 <div className="col-md-5">
-
-                    {/* SUMMARY */}
                     <div className="card p-4 shadow-sm mb-3">
                         <h5 className="mb-3 fw-semibold">Order Summary</h5>
-
                         {cartItems.map((item) => (
                             <div key={item.id} className="d-flex align-items-start gap-2 justify-content-between mb-3">
-
-                                {/* 🖼 LEFT: PRODUCT IMAGE */}
                                 <div className="d-flex align-items-center gap-3">
                                     <img
                                         src={item.image}
@@ -276,15 +253,11 @@ const CheckoutEnd = () => {
                                             border: "1px solid #eee"
                                         }}
                                     />
-
-                                    {/* 📦 NAME + QTY */}
                                     <div>
                                         <div className="fw-semibold">{item.name}</div>
                                         <small className="text-muted">
                                             Qty: {item.quantity}
                                         </small>
-
-                                        {/* 🔹 OPTIONAL TYPE LABEL */}
                                         <div>
                                             <small className={item.type === "rental" ? "text-rental" : "text-shop"}>
                                                 Type: {item.type === "rental" ? "Rental" : "Shop"}
@@ -292,47 +265,36 @@ const CheckoutEnd = () => {
                                         </div>
                                     </div>
                                 </div>
-
-                                {/* 💰 PRICE */}
                                 <div className="fw-semibold">
                                     £{item.price * item.quantity}
                                 </div>
-
                             </div>
                         ))}
                         <hr />
-
                         <div className="d-flex justify-content-between">
                             <span>Subtotal</span>
                             <span>£{subtotal}</span>
                         </div>
-
                         {discount > 0 && (
                             <div className="d-flex justify-content-between text-success">
                                 <span>Discount (FLAT10)</span>
                                 <span>-£{discount.toFixed(2)}</span>
                             </div>
                         )}
-
                         {deposit > 0 && (
                             <div className="d-flex justify-content-between text-primary">
                                 <span>Refundable Deposit</span>
                                 <span>£{deposit}</span>
                             </div>
                         )}
-
                         <hr />
-
                         <div className="d-flex justify-content-between fw-bold">
                             <span>Total</span>
                             <span>£{total.toFixed(2)}</span>
                         </div>
                     </div>
-
-                    {/* 🎟 COUPON */}
                     <div className="card p-4 shadow-sm mb-3">
                         <h6 className="fw-semibold">Apply Coupon</h6>
-
                         <div className="d-flex gap-2">
                             <input
                                 type="text"
@@ -348,15 +310,12 @@ const CheckoutEnd = () => {
                                 Apply
                             </button>
                         </div>
-
                         {couponMessage && (
                             <small className={discount > 0 ? "text-success" : "text-danger"}>
                                 {couponMessage}
                             </small>
                         )}
                     </div>
-
-                    {/* PAYMENT */}
                     <div className="card p-4 shadow-sm">
                         <h6 className="mb-3 fw-semibold">Payment Method</h6>
 
@@ -364,17 +323,14 @@ const CheckoutEnd = () => {
                             <input type="radio" checked={paymentMethod === "card"} onChange={() => setPaymentMethod("card")} />
                             <label className="ms-2">Card</label>
                         </div>
-
                         <div className="form-check">
                             <input type="radio" checked={paymentMethod === "upi"} onChange={() => setPaymentMethod("upi")} />
                             <label className="ms-2">UPI</label>
                         </div>
-
                         <div className="form-check">
                             <input type="radio" checked={paymentMethod === "cod"} onChange={() => setPaymentMethod("cod")} />
                             <label className="ms-2">COD</label>
                         </div>
-
                         <button
                             className="btn btn-primary w-100 mt-3"
                             onClick={handleSubmit}
@@ -383,7 +339,6 @@ const CheckoutEnd = () => {
                             Place Order
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
