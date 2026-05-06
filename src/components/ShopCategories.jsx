@@ -8,7 +8,7 @@ const ShopCategories = () => {
                     <div className="container">
                         <div className="page_title"><h2>Shop by Category</h2></div>
                         <div className="row">
-                            <div className="col-lg col-md-12 mb-3">
+                            <div className="col-sm-12 col-md-6 col-lg mb-3">
                                 <div className="category_item">
                                     <div className="category_image"><Link to="monitor-shop"><img src="images/monitor_img.png" alt="" /></Link></div>
                                     <div className="category_info">
@@ -22,7 +22,7 @@ const ShopCategories = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg col-md-12 mb-3">
+                            <div className="col-sm-12 col-md-6 col-lg mb-3">
                                 <div className="category_item">
                                     <div className="category_image"><Link to="desktop-shop"><img src="images/desktop_img.png" alt="" /></Link></div>
                                     <div className="category_info">
@@ -35,7 +35,7 @@ const ShopCategories = () => {
                                     </div>
                                 </div>                              
                             </div>
-                            <div className="col-lg col-md-12 mb-3">
+                            <div className="col-sm-12 col-md-6 col-lg mb-3">
                                 <div className="category_item">
                                     <div className="category_image"><Link to="laptop-shop"><img src="images/laptop_img.png" alt="" /></Link></div>
                                     <div className="category_info">
@@ -49,7 +49,7 @@ const ShopCategories = () => {
                                     </div>
                                 </div>                                
                             </div>
-                            <div className="col-lg col-md-12 mb-3">
+                            <div className="col-sm-12 col-md-6 col-lg mb-3">
                                 <div className="category_item">
                                     <div className="category_image"><Link to="servers-shop"><img src="images/servers_img.png" alt="" /></Link></div>
                                     <div className="category_info">
@@ -62,7 +62,7 @@ const ShopCategories = () => {
                                     </div>
                                 </div>                               
                             </div>
-                            <div className="col-lg col-md-12 mb-3">
+                            <div className="col-sm-12 col-md-6 col-lg mb-3">
                                 <div className="category_item">
                                     <div className="category_image"><Link to="office-shop"><img src="images/components_img.png" alt="" /></Link></div>
                                     <div className="category_info">

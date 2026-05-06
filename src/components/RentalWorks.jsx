@@ -7,7 +7,7 @@ const RentalWorks = () => {
                 <div className="container">
                     <div className="page_title"><h2>Why work with Compcaribe Rentals?</h2></div>
                     <div className="row">
-                        <div className="col-lg-3 col-sm-6 col-md-12">
+                        <div className="col-lg-3 col-sm-6 col-md-6">
                             <div className="card h-100 text-center mb-3">
                                 <img src="/images/scale_img.png" className="card-img-top" alt="..."/>
                                 <div className="card-body">
@@ -16,7 +16,7 @@ const RentalWorks = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-sm-6 col-md-12">
+                        <div className="col-lg-3 col-sm-6 col-md-6">
                             <div className="card h-100 text-center mb-3">
                                 <img src="/images/speed_img.png" className="card-img-top" alt="..."/>
                                 <div className="card-body">
@@ -25,7 +25,7 @@ const RentalWorks = () => {
                                 </div>
                             </div>                         
                         </div>
-                        <div className="col-lg-3 col-sm-6 col-md-12">
+                        <div className="col-lg-3 col-sm-6 col-md-6">
                             <div className="card h-100 text-center mb-3">
                                 <img src="/images/support_img.png" className="card-img-top" alt="..."/>
                                 <div className="card-body">
@@ -34,7 +34,7 @@ const RentalWorks = () => {
                                 </div>
                             </div>                        
                         </div>
-                        <div className="col-lg-3 col-sm-6 col-md-12">
+                        <div className="col-lg-3 col-sm-6 col-md-6">
                             <div className="card h-100 text-center mb-3">
                                 <img src="/images/iso_img.png" className="card-img-top" alt="..."/>
                                 <div className="card-body">

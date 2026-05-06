@@ -25,39 +25,51 @@ const AddToCart = () => {
 
   return (
     <div className="container py-4">
-      <div className="row">
+      <div className="cart-block">
+        <div className="row">
+          <div className="col-lg-8">
+            <div className="card p-3 mb-3">
+              <h4 className="fw-bold mb-3">Cart</h4>
 
-        {/* LEFT */}
-        <div className="col-lg-8">
-          <div className="card p-3 mb-3">
-            <h4 className="fw-bold mb-3">Cart</h4>
+              {isCartEmpty ? (
+                <p>Your cart is empty</p>
+              ) : (
+                cartItems.map((item) => (
+                  <div
+                    key={item.id}
+                    className="d-flex align-items-center border-bottom py-3"
+                  >
 
-            {isCartEmpty ? (
-              <p>Your cart is empty</p>
-            ) : (
-              cartItems.map((item) => (
-                <div
-                  key={item.id}
-                  className="d-flex align-items-center border-bottom py-3"
-                >
-                  <img
-                    src={item.image}
-                    alt=""
-                    style={{
-                      width: "100px",
-                      height: "80px",
-                      objectFit: "contain"
-                    }}
-                  />
+                    <Link
+                      to={
+                        item.type === "rental"
+                          ? `/product/${item.id}`
+                          : `/shop-index/product/${item.id}`
+                      }
+                      className="d-flex align-items-center text-decoration-none text-dark product-title"
+                      style={{ flex: 1 }}
+                    >
+                      <img
+                        src={item.image}
+                        alt=""
+                        style={{
+                          width: "100px",
+                          height: "80px",
+                          objectFit: "contain"
+                        }}
+                      />
 
-                  <div className="ms-3 flex-grow-1">
-                    <h6 className="fw-semibold">{item.name}</h6>
+                      <div className="mx-3">
+                        <h6 className="fw-semibold">{item.name}</h6>
 
-                    {item.type === "rental" && item.duration && (
-                      <div className="small text-muted">
-                        Rental Tenure: {item.duration}
+                        {item.type === "rental" && item.duration && (
+                          <div className="small text-muted">
+                            Rental Tenure: {item.duration}
+                          </div>
+                        )}
                       </div>
-                    )}
+                    </Link>
+
 
                     <input
                       type="number"
@@ -67,85 +79,81 @@ const AddToCart = () => {
                         updateQuantity(item.id, Number(e.target.value))
                       }
                       style={{ width: "70px" }}
-                      className="form-control mt-2"
+                      className="form-control me-3"
                     />
-                  </div>
 
-                  <div className="text-end">
-                    <h5 className="fw-bold">
-                      £{item.price * item.quantity}
-                    </h5>
+                    <div className="text-end">
+                      <h5 className="fw-bold">
+                        £{item.price * item.quantity}
+                      </h5>
 
-                    {item.type === "rental" && (
-                      <small className="text-muted">per month</small>
-                    )}
+                      {item.type === "rental" && (
+                        <small className="text-muted">per month</small>
+                      )}
 
-                    <div>
-                      <button
-                        className="btn btn-sm text-danger border"
-                        onClick={() => removeFromCart(item.id)}
-                      >
-                        <i className="fa-solid fa-trash-can"></i>
-                      </button>
+                      <div>
+                        <button
+                          className="btn btn-sm text-danger border"
+                          onClick={() => removeFromCart(item.id)}
+                        >
+                          <i className="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
+
                   </div>
-                </div>
-              ))
-            )}
+                ))
+              )}
+            </div>
           </div>
-        </div>
+          <div className="col-lg-4">
+            <div className="card p-3">
 
-        {/* RIGHT */}
-        <div className="col-lg-4">
-          <div className="card p-3">
+              <h5 className="fw-semibold mb-3">Order Summary</h5>
 
-            <h5 className="fw-semibold mb-3">Order Summary</h5>
-
-            <div className="d-flex justify-content-between mb-2">
-              <span>Total Cost</span>
-              <span>£{totalCost.toFixed(2)}</span>
-            </div>
-
-            <div className="d-flex justify-content-between mb-2">
-              <span>Shipping</span>
-              <span>£{shipping.toFixed(2)}</span>
-            </div>
-
-            {deposit > 0 && (
               <div className="d-flex justify-content-between mb-2">
-                <span>
-                  Refundable Deposit
-                  <small className="text-muted d-block">
-                    (charged for each rental product)
-                  </small>
-                </span>
-                <span>£{deposit.toFixed(2)}</span>
+                <span>Total Cost</span>
+                <span>£{totalCost.toFixed(2)}</span>
               </div>
-            )}
 
-            <hr />
+              <div className="d-flex justify-content-between mb-2">
+                <span>Shipping</span>
+                <span>£{shipping.toFixed(2)}</span>
+              </div>
 
-            <div className="d-flex justify-content-between fw-bold mb-3">
-              <span>Total incl. VAT</span>
-              <span>£{total.toFixed(2)}</span>
+              {deposit > 0 && (
+                <div className="d-flex justify-content-between mb-2">
+                  <span>
+                    Refundable Deposit
+                    <small className="text-muted d-block">
+                      (charged for each rental product)
+                    </small>
+                  </span>
+                  <span>£{deposit.toFixed(2)}</span>
+                </div>
+              )}
+
+              <hr />
+
+              <div className="d-flex justify-content-between fw-bold mb-3">
+                <span>Total incl. VAT</span>
+                <span>£{total.toFixed(2)}</span>
+              </div>
+
+              {isCartEmpty ? (
+                <button className="btn btn-secondary w-100" disabled>
+                  Cart is Empty
+                </button>
+              ) : (
+                <Link to="/checkout" className="btn btn-rental w-100">
+                  Continue to checkout →
+                </Link>
+              )}
+
             </div>
-
-            {isCartEmpty ? (
-              <button
-                className="btn btn-secondary w-100"
-                disabled
-              >
-                Cart is Empty
-              </button>
-            ) : (
-              <Link to="/checkout" className="btn btn-rental w-100">
-                Continue to checkout →
-              </Link>
-            )}
-
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   );

@@ -94,9 +94,12 @@ const ContactContent = () => {
                                         </div>
                                         <h5>Call Us</h5>
                                         <p>
-                                            Need help? Call our team on <strong>123 4567 8910</strong>.
+                                            Need help? Call our team on <strong>12345 67890</strong>.
                                         </p>
-                                        <a className="btn d-block btn-secondary" href="#">
+                                        <a
+                                            className="btn d-block btn-secondary"
+                                            href="tel:+911234567890"
+                                        >
                                             Call Now
                                         </a>
                                     </div>
@@ -112,7 +115,10 @@ const ContactContent = () => {
                                         <p>
                                             Contact us at <strong>sales@compcaribe.com</strong>
                                         </p>
-                                        <a className="btn d-block btn-primary" href="#">
+                                        <a
+                                            className="btn d-block btn-primary"
+                                            href="mailto:sales@compcaribe.com"
+                                        >
                                             Send Email
                                         </a>
                                     </div>
