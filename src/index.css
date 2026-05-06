@@ -431,6 +431,7 @@ position:absolute; border-radius:20px; top:-8px; right:0px;}
 .faqs .accordion-header .accordion-button{font-weight:bold;}
 .content_info .card{padding:15px; font-size:15px;}
 .content_info .card h3{font-size:18px; font-weight:bold;}
+.list_view .product_item .product_item_link{width: 100%;}
 
 
 @media screen and (min-width: 320px) and (max-width: 767px)
@@ -441,7 +442,7 @@ position:absolute; border-radius:20px; top:-8px; right:0px;}
   .header .header_top .search_bar{position:absolute;top:120px;right:8px;z-index:1; width:75%;}
   .header .header_top .search_bar .form-control::placeholder{font-size: 14px;padding: 8px 16px;}
   .header .header_top .cta_btn{position:absolute; right:10px;}
-  .header .header_top .view_tabs a{display:flex; gap:10px; align-items:center;}
+  .header .header_top .view_tabs a{display:flex; gap:10px; align-items:center;padding: 12px 24px;}
   .header .header_top .view_tabs a span{margin:0px; display:inherit; clear:inherit;}
   .header .header_top .phone_no span{display:none;}
   .header .header_top .my_account span {display: none;}
