@@ -44,8 +44,7 @@ function FilterSidebar({
           </span> 
 
           <i
-            className={`fa-solid ${showFilter ? " fa-chevron-up" : " fa-chevron-down"
-              }`}
+            className={`fa-solid ${showFilter ? " fa-chevron-up" : " fa-chevron-down"}`}
           ></i>
         </button>
       </div>
@@ -66,15 +65,21 @@ function FilterSidebar({
         {/* BRAND */}
         <div className="filter_section mb-4">
           <h5 className="fw-semibold">Brands</h5>
+
           {brands.map((brand, i) => (
             <div key={i} className="form-check">
               <input
                 type="radio"
+                id={`brand-${i}`}
                 className="form-check-input"
                 checked={selectedBrand === brand}
                 onChange={() => setSelectedBrand(brand)}
               />
-              <label className="form-check-label text-capitalize">
+              <label
+                htmlFor={`brand-${i}`}
+                className="form-check-label text-capitalize"
+                style={{ cursor: "pointer" }}
+              >
                 {brand}
               </label>
             </div>
@@ -84,6 +89,7 @@ function FilterSidebar({
         {/* SORT */}
         <div className="filter_section mb-4">
           <h5 className="fw-semibold">Sort By</h5>
+
           {[
             { label: "Default", value: "default" },
             { label: "Price: Low to High", value: "low-high" },
@@ -93,11 +99,18 @@ function FilterSidebar({
             <div key={i} className="form-check">
               <input
                 type="radio"
+                id={`sort-${i}`}
                 className="form-check-input"
                 checked={sortOption === item.value}
                 onChange={() => setSortOption(item.value)}
               />
-              <label className="form-check-label">{item.label}</label>
+              <label
+                htmlFor={`sort-${i}`}
+                className="form-check-label"
+                style={{ cursor: "pointer" }}
+              >
+                {item.label}
+              </label>
             </div>
           ))}
         </div>
