@@ -237,7 +237,7 @@ const CheckoutEnd = () => {
                     </div>
                 </div>
                 <div className="col-md-5">
-                    <div className="card p-4 shadow-sm mb-3">
+                    <div className="card p-4 shadow-sm mb-3 order-summary">
                         <h5 className="mb-3 fw-semibold">Order Summary</h5>
                         {cartItems.map((item) => (
                             <div key={item.id} className="d-flex align-items-start gap-2 justify-content-between mb-3">
@@ -254,7 +254,9 @@ const CheckoutEnd = () => {
                                         }}
                                     />
                                     <div>
-                                        <div className="fw-semibold">{item.name}</div>
+                                        <div>
+                                            <h6 className="fw-semibold">{item.name}</h6>
+                                        </div>
                                         <small className="text-muted">
                                             Qty: {item.quantity}
                                         </small>
