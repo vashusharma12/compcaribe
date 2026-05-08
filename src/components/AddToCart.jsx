@@ -37,7 +37,7 @@ const AddToCart = () => {
                 cartItems.map((item) => (
                   <div
                     key={item.id}
-                    className="d-flex align-items-center border-bottom py-3"
+                    className="d-flex align-items-center border-bottom py-3 cart-product"
                   >
 
                     <Link
