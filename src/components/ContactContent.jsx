@@ -107,7 +107,7 @@ const ContactContent = () => {
 
                                 {/* EMAIL */}
                                 <div className="col-md-6">
-                                    <div className="card p-3">
+                                    <div className="card p-3 email-block">
                                         <div className="icon">
                                             <img src="/images/email_icon.svg" alt="" />
                                         </div>

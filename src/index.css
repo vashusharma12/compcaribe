@@ -313,6 +313,7 @@ a:focus{box-shadow:inherit !important;}
   .recommendations .flex_container{flex-direction:column;}
   .recommendations .product_item{width:100%;}
   .contact_us .contact_info .customer_services .block_row{width:100%;flex-wrap: wrap;}
+  .contact_us .contact_info .email-block{margin-top: 40px;}
   .category_block .category_item .category_image img{width: 150px;object-fit: cover;}
   .inner_banner img{height: 200px; object-fit: cover;}
   .product_block .product_item{width: 100%;}
