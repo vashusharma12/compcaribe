@@ -229,7 +229,7 @@ a:focus{box-shadow:inherit !important;}
 .shop_view .product_block .product_item .price{color:#1E458A;}
 .shop_view .product_page .head .view_changer .btn.active{background:#1E458A; border-color:#1E458A;}
 .shop_view .pagination-container .pagination .active .page-link{background:#1E458A; border-color:#1E458A;}
-.shop_view .product_label_sale{right:inherit; left:10px;}
+.shop_view .product_label_sale{right:inherit; left:10px;display: none;}
 .shop_view .product_page .product_block .product_list .product_item .info_flex_container{flex-direction: row-reverse; justify-content:start;}
 .shop_view .product_page .product_block .product_list .product_item .product_item_link{background: linear-gradient(180deg,#fff 80%,#dde5ff);}
 .shop_view .page_title h2{color:#1E458A;}
