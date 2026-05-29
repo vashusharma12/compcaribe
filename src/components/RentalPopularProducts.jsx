@@ -9,7 +9,7 @@ const PopularProducts = () => {
                         <div class="page_title"><h2>Most popular Products For Rent</h2></div>
                         <div class="product_slider product_block">
                             <div class="product_item">
-                                <Link to="product/41" class="product_item_link" href="rent_product-details.html">
+                                <Link to="product/macBook-max-m4-chip-41" class="product_item_link" href="rent_product-details.html">
                                     <div class="product_img"><img src="/images/1733896841_2.jpg" alt="" /></div>
                                     <div class="product_info">
                                         <div class="info_flex_container">
@@ -34,7 +34,7 @@ const PopularProducts = () => {
                                 </Link>
                             </div>
                             <div class="product_item">
-                                <Link to="product/66" class="product_item_link" href="rent_product-details.html">
+                                <Link to="product/gaming-monitor-66" class="product_item_link" href="rent_product-details.html">
                                     <div class="product_img"><img src="images/monitor_img1.jpg" alt="" /></div>
                                     <div class="product_info">
                                         <div class="info_flex_container">
@@ -58,7 +58,7 @@ const PopularProducts = () => {
                                 </Link>
                             </div>
                             <div class="product_item">
-                                <Link to="product/51" class="product_item_link" href="rent_product-details.html">
+                                <Link to="product/samsung-galaxy-tab-s4-51" class="product_item_link" href="rent_product-details.html">
                                     <div class="product_img"><img src="/images/bmb430b0-500x500.webp" alt="" /></div>
                                     <div class="product_info">
                                         <div class="info_flex_container">
@@ -82,7 +82,7 @@ const PopularProducts = () => {
                                 </Link>
                             </div>
                             <div class="product_item">
-                                <Link to="product/60" class="product_item_link" href="rent_product-details.html">
+                                <Link to="product/desktop-pc-60" class="product_item_link" href="rent_product-details.html">
                                     <div class="product_img"><img src="/images/computerr-4.jpg" alt="" /></div>
                                     <div class="product_info">
                                         <div class="info_flex_container">
@@ -106,7 +106,7 @@ const PopularProducts = () => {
                                 </Link>
                             </div>
                             <div class="product_item">
-                                <Link to="product/74" class="product_item_link" href="rent_product-details.html">
+                                <Link to="product/black-&-white-printer-74" class="product_item_link" href="rent_product-details.html">
                                     <div class="product_img"><img src="/images/printer-3.jpeg" alt="" /></div>
                                     <div class="product_info">
                                         <div class="info_flex_container">

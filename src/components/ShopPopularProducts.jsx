@@ -8,7 +8,7 @@ const ShopPopularProducts = () => {
                         <div className="page_title"><h2>Most Popular Products</h2></div>
                         <div className="product_slider product_block">
                             <div className="product_item">
-                                <Link to="" to="product/9" className="product_item_link">
+                                <Link to="" to="product/pc-desktop-computer-9" className="product_item_link">
                                     <div className="product_label_sale"><span className="sale">Save up to 56%</span></div>
                                     <div className="product_img"><img src="/images/computer-1_.jpg" alt=""/></div>
                                     <div className="product_info">
@@ -40,7 +40,7 @@ const ShopPopularProducts = () => {
                                 </Link>
                             </div>
                             <div className="product_item">
-                                <Link to="" to="product/33" className="product_item_link">
+                                <Link to="" to="product/office-chair-33" className="product_item_link">
                                     <div className="product_label_sale"><span className="sale">Save up to 56%</span></div>
                                     <div className="product_img"><img src="/images/chair_.jpg" alt=""/></div>
                                     <div className="product_info">
@@ -72,7 +72,7 @@ const ShopPopularProducts = () => {
                                 </Link>
                             </div>
                             <div className="product_item">
-                                <Link to="" to="product/26" className="product_item_link">
+                                <Link to="" to="product/mount-server-cabinet-26" className="product_item_link">
                                     <div className="product_label_sale"><span className="sale">Save up to 56%</span></div>
                                     <div className="product_img"><img src="/images/server-2.jpg" alt=""/></div>
                                     <div className="product_info">
@@ -104,7 +104,7 @@ const ShopPopularProducts = () => {
                                 </Link>
                             </div>
                             <div className="product_item">
-                                <Link to="" to="product/18" className="product_item_link" href="shop-products/laptop-product-detail.html">
+                                <Link to="" to="product/jumper-15.6-inch-laptop-18" className="product_item_link" href="shop-products/laptop-product-detail.html">
                                     <div className="product_label_sale"><span className="sale">Save up to 56%</span></div>
                                     <div className="product_img"><img src="/images/laptop-2.jpg" alt=""/></div>
                                     <div className="product_info">
@@ -136,7 +136,7 @@ const ShopPopularProducts = () => {
                                 </Link>
                             </div>
                             <div className="product_item">
-                                <Link to="" to="product/2" className="product_item_link" href="shop-products/monitor-product-detail.html">
+                                <Link to="" to="product/samsung-fullhd-monitor-2" className="product_item_link" href="shop-products/monitor-product-detail.html">
                                     <div className="product_label_sale"><span className="sale">Save up to 56%</span></div>
                                     <div className="product_img"><img src="/images/monitor-shop.jpg" alt=""/></div>
                                     <div className="product_info">
