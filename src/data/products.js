@@ -1,6 +1,6 @@
 const products = [
     {
-        id: 1,
+        id: "dell-24-monitor-1",
         name: "Dell 24 Monitor - SE2425HM, Full HD (1920x1080), 100Hz, IPS, 5ms, VESA (100x100mm), HDMI, VGA, 3 Year Warranty, Black",
         image: "/images/monitor-shop-2.jpg",
         brandIcon: "/images/dell-logo.png",
@@ -17,7 +17,7 @@ const products = [
         title: "Monitors"
     },
     {
-        id: 2,
+        id: "samsung-fullhd-monitor-2",
         name: "Samsung LS22D310EAUXXU 22\" FullHD Monitor - 1920x1080p, VGA, HDMI, Eye Saver Mode",
         image: "/images/monitor-shop.jpg",
         brandIcon: "/images/samsung-logo.png",
@@ -33,7 +33,7 @@ const products = [
         brand: "Samsung"
     },
     {
-        id: 3,
+        id: "philips-white-monitor-3",
         name: "Philips 271V8AW - 27 Inch FHD White Monitor, 75Hz, 4ms, VA, Speakers, AdaptiveSync, Flickerfree, Anti-Glare",
         image: "/images/monitor-3_.jpg",
         brandIcon: "/images/philips-logo.png",
@@ -49,7 +49,7 @@ const products = [
         brand: "Philips"
     },
     {
-        id: 4,
+        id: "philips-ultra-hd-monitor-4",
         name: "Philips 27E1N1800AE - 27 inch Ultra HD monitor, HDR10 (3840x2160, 60 Hz, HDMI 2.0, DisplayPort 1.4)",
         image: "/images/monitor-4_.jpg",
         brandIcon: "/images/philips-logo.png",
@@ -65,7 +65,7 @@ const products = [
         brand: "Philips"
     },
     {
-        id: 5,
+        id:  "dell-24-monitor-5",
         name: "Dell 24 Monitor - SE2425HM, Full HD (1920x1080), 100Hz, IPS, 5ms, VESA (100x100mm), HDMI, VGA, 3 Year Warranty, Black",
         image: "/images/monitor-shop-2.jpg",
         brandIcon: "/images/dell-logo.png",
@@ -81,7 +81,7 @@ const products = [
         brand: "Dell"
     },
     {
-        id: 6,
+        id: "samsung-fullhd-monitor-6",
         name: "Samsung LS22D310EAUXXU 22\" FullHD Monitor - 1920x1080p, VGA, HDMI, Eye Saver Mode",
         image: "/images/monitor-shop.jpg",
         brandIcon: "/images/samsung-logo.png",
@@ -97,7 +97,7 @@ const products = [
         brand: "Samsung"
     },
     {
-        id: 7,
+        id: "philips-white-monitor-7",
         name: "Philips 271V8AW - 27 Inch FHD White Monitor, 75Hz, 4ms, VA, Speakers, AdaptiveSync, Flickerfree, Anti-Glare",
         image: "/images/monitor-3_.jpg",
         brandIcon: "/images/philips-logo.png",
@@ -113,7 +113,7 @@ const products = [
         brand: "Philips"
     },
     {
-        id: 8,
+        id: "philips-ultra-hd-monitor-8",
         name: "Philips 27E1N1800AE - 27 inch Ultra HD monitor, HDR10 (3840x2160, 60 Hz, HDMI 2.0, DisplayPort 1.4)",
         image: "/images/monitor-4_.jpg",
         brandIcon: "/images/philips-logo.png",
@@ -129,7 +129,7 @@ const products = [
         brand: "Philips"
     },
     {
-        id: 9,
+        id: "pc-desktop-computer-9",
         name: '23.8" FHD All in One PC Desktop Computer, i5-12450H 8 Core Processor, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Wired Keyboard & Mouse, Windows 11 Pro (Curved Panel)',
         image: "/images/computer-1_.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -145,7 +145,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 10,
+        id: "pc-desktop-computer-10",
         name: '23.8" FHD All in One PC Desktop Computer, i5-12450H 8 Core Processor, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Wired Keyboard & Mouse, Windows 11 Pro',
         image: "/images/computer-3.png",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -161,7 +161,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 11,
+        id: "touchscreen-quad-core-11",
         name: "All-in-One PC Touchscreen Quad-Core N95 (Up to 3.4GHz), 16GB RAM, 512GB SSD, 23.8 Inch Display, Pop-up Webcam, Dual Band WiFi, Bluetooth",
         image: "/images/computer-1_.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -177,7 +177,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 12,
+        id: "pc-desktop-computer-12",
         name: '23.8" FHD All in One PC Desktop Computer, i5-12450H 8 Core Processor, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Windows 11 Pro',
         image: "/images/computer-4.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -193,7 +193,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 13,
+        id: "pc-desktop-computer-13",
         name: '23.8" FHD All in One PC Desktop Computer, i5-12450H 8 Core Processor, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Wired Keyboard & Mouse, Windows 11 Pro (Curved Panel)',
         image: "/images/computer-1_.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -209,7 +209,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 14,
+        id: "pc-desktop-computer-14",
         name: '23.8" FHD All in One PC Desktop Computer, i5-12450H 8 Core Processor, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Wired Keyboard & Mouse, Windows 11 Pro',
         image: "/images/computer-3.png",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -225,7 +225,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 15,
+        id: "touchscreen-quad-core-15",
         name: "All-in-One PC Touchscreen Quad-Core N95 (Up to 3.4GHz), 16GB RAM, 512GB SSD, 23.8 Inch Display, Pop-up Webcam, Dual Band WiFi, Bluetooth",
         image: "/images/computer-1_.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -241,7 +241,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 16,
+        id: "pc-desktop-computer-16",
         name: '23.8" FHD All in One PC Desktop Computer, i5-12450H 8 Core Processor, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Windows 11 Pro',
         image: "/images/computer-4.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -257,7 +257,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 17,
+        id: "18.5-inch-fhd-laptop-17",
         name: "18.5 Inch FHD Laptop with 13th N150 Quad-Core Processor up to 3.6GHz, 16GB RAM, 512GB M.2 SSD, Dual-Band WiFi, BT 5.2, USB 3.2, HDMI, Type-C, Dual Speakers",
         image: "/images/laptop-1_.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -273,7 +273,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 18,
+        id: "jumper-15.6-inch-laptop-18",
         name: "Jumper 15.6 Inch Laptop with Office 365, HD Display, 12GB RAM, 640GB Storage (512GB SSD + 128GB eMMC), 5000mAh Battery, 5205U Processor",
         image: "/images/laptop-2.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -289,7 +289,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 19,
+        id: "16-inch-laptop-19",
         name: "16-Inch Laptop, 8GB DDR RAM, 256GB SSD (Expandable to 1TB), Pentium Quad-Core CPU up to 2.64GHz, 9000mAh Battery, Mini HDMI, USB 3.0",
         image: "/images/laptop-3.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -305,7 +305,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 20,
+        id: "15.6-inch-laptop-20",
         name: "15.6 Inch Laptop, Celeron N4000 Processor, 8GB LPDDR4 RAM, 256GB SSD, 180° Flip FHD Display (1920x1080), USB 3.0, Mini HDMI, WiFi, Bluetooth 4.2",
         image: "/images/laptop-4.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -321,7 +321,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 21,
+        id: "18.5-inch-fhd-laptop-21",
         name: "18.5 Inch FHD Laptop with 13th N150 Quad-Core Processor up to 3.6GHz, 16GB RAM, 512GB M.2 SSD, Dual-Band WiFi, BT 5.2, USB 3.2, HDMI, Type-C, Dual Speakers",
         image: "/images/laptop-1_.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -337,7 +337,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 22,
+        id: "jumper-15.6-inch-laptop-22",
         name: "Jumper 15.6 Inch Laptop with Office 365, HD Display, 12GB RAM, 640GB Storage (512GB SSD + 128GB eMMC), 5000mAh Battery, 5205U Processor",
         image: "/images/laptop-2.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -353,7 +353,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 23,
+        id: "16-inch-laptop-23",
         name: "16-Inch Laptop, 8GB DDR RAM, 256GB SSD (Expandable to 1TB), Pentium Quad-Core CPU up to 2.64GHz, 9000mAh Battery, Mini HDMI, USB 3.0",
         image: "/images/laptop-3.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -369,7 +369,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 24,
+        id: "15.6-inch-laptop-24",
         name: "15.6 Inch Laptop, Celeron N4000 Processor, 8GB LPDDR4 RAM, 256GB SSD, 180° Flip FHD Display (1920x1080), USB 3.0, Mini HDMI, WiFi, Bluetooth 4.2",
         image: "/images/laptop-4.jpg",
         brandIcon: "/images/shop/hp_logo_icon.png",
@@ -385,7 +385,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 25,
+        id: "network-rack-25",
         name: "Tecmojo 12U Open Frame Network Rack, 19\" Compatible, Floor Standing & Wall Mountable, Includes 2x 1U Server Shelf & Mounting Hardware",
         image: "/images/server-1_.jpg",
         brandIcon: "/images/techmojo-logo.png",
@@ -401,7 +401,7 @@ const products = [
         brand: "Tecmojo"
     },
     {
-        id: 26,
+        id: "mount-server-cabinet-26",
         name: "Tecmojo 6U 450mm Deep Wall Mount Server Cabinet, Lockable Door & Side Panels, Glass Door, Suitable for 19\" IT Equipment",
         image: "/images/server-2.jpg",
         brandIcon: "/images/techmojo-logo.png",
@@ -417,7 +417,7 @@ const products = [
         brand: "Tecmojo"
     },
     {
-        id: 27,
+        id: "mount-data-cabinet-27",
         name: "Tecmojo 6U Wall Mount Data Cabinet, 10\" Wide 330mm Depth, Includes Rack Shelf & Cable Organizer, 50kg Capacity",
         image: "/images/server-3.jpg",
         brandIcon: "/images/techmojo-logo.png",
@@ -433,7 +433,7 @@ const products = [
         brand: "Tecmojo"
     },
     {
-        id: 28,
+        id: "server-cabinet-28",
         name: "GeeekPi 12U Server Cabinet, 10 Inch Rack for Network, Servers, Audio & Video Equipment, DeskPi RackMate T2",
         image: "/images/server-4.jpg",
         brandIcon: "/images/deskpi-logo.png",
@@ -450,7 +450,7 @@ const products = [
         brand: "GeeekPi"
     },
     {
-        id: 29,
+        id: "network-rack-29",
         name: "Tecmojo 12U Open Frame Network Rack, 19\" Compatible, Floor Standing & Wall Mountable, Includes 2x 1U Server Shelf & Mounting Hardware",
         image: "/images/server-1_.jpg",
         brandIcon: "/images/techmojo-logo.png",
@@ -466,7 +466,7 @@ const products = [
         brand: "Tecmojo"
     },
     {
-        id: 30,
+        id: "mount-server-cabinet-30",
         name: "Tecmojo 6U 450mm Deep Wall Mount Server Cabinet, Lockable Door & Side Panels, Glass Door, Suitable for 19\" IT Equipment",
         image: "/images/server-2.jpg",
         brandIcon: "/images/techmojo-logo.png",
@@ -482,7 +482,7 @@ const products = [
         brand: "Tecmojo"
     },
     {
-        id: 31,
+        id: "mount-data-cabinet-31",
         name: "Tecmojo 6U Wall Mount Data Cabinet, 10\" Wide 330mm Depth, Includes Rack Shelf & Cable Organizer, 50kg Capacity",
         image: "/images/server-3.jpg",
         brandIcon: "/images/techmojo-logo.png",
@@ -498,7 +498,7 @@ const products = [
         brand: "Tecmojo"
     },
     {
-        id: 32,
+        id: "server-cabinet-32",
         name: "GeeekPi 12U Server Cabinet, 10 Inch Rack for Network, Servers, Audio & Video Equipment, DeskPi RackMate T2",
         image: "/images/server-4.jpg",
         brandIcon: "/images/deskpi-logo.png",
@@ -514,7 +514,7 @@ const products = [
         brand: "GeeekPi"
     },
     {
-        id: 33,
+        id: "office-chair-33",
         name: "BASETBL Office Chair, Adjustable Ergonomic Computer Desk Chair, Comfortable Swivel Executive Chair, 150kg, Black",
         image: "/images/chair_.jpg",
         delivery: "Free Delivery",
@@ -529,7 +529,7 @@ const products = [
         brand: "BASETBL"
     },
     {
-        id: 34,
+        id: "office-chair-34",
         name: "Marsail Ergonomic Office Chair with 3D Headrest, Lumbar Support, Flip-up Armrests, Adjustable Desk Chair with Tilt Lock",
         image: "/images/chair-2.jpg",
         delivery: "Free Delivery",
@@ -544,7 +544,7 @@ const products = [
         brand: "Marsail"
     },
     {
-        id: 35,
+        id: "desk-with-monitor-stand-35",
         name: "GreenForest Computer Desk with Monitor Stand, 100cm Home Office Desk with Storage Shelves, Study Desk, White",
         image: "/images/desk_.jpg",
         delivery: "Free Delivery",
@@ -559,7 +559,7 @@ const products = [
         brand: "Marsail"
     },
     {
-        id: 36,
+        id: "cantilever-desk-36",
         name: "Office Hippo Heavy Duty Rectangular Cantilever Desk, 160cm x 80cm, Silver Frame/Beech Top, Home Office Table",
         image: "/images/desk-2.jpg",
         delivery: "Free Delivery",
@@ -574,7 +574,7 @@ const products = [
         brand: "Marsail"
     },
     {
-        id: 37,
+        id: "office-chair-37",
         name: "BASETBL Office Chair, Adjustable Ergonomic Computer Desk Chair, Comfortable Swivel Executive Chair, 150kg, Black",
         image: "/images/chair_.jpg",
         delivery: "Free Delivery",
@@ -589,7 +589,7 @@ const products = [
         brand: "BASETBL"
     },
     {
-        id: 38,
+        id: "office-chair-38",
         name: "Marsail Ergonomic Office Chair with 3D Headrest, Lumbar Support, Flip-up Armrests, Adjustable Desk Chair with Tilt Lock",
         image: "/images/chair-2.jpg",
         delivery: "Free Delivery",
@@ -604,7 +604,7 @@ const products = [
         brand: "Marsail"
     },
     {
-        id: 39,
+        id: "desk-with-monitor-stand-39",
         name: "GreenForest Computer Desk with Monitor Stand, 100cm Home Office Desk with Storage Shelves, Study Desk, White",
         image: "/images/desk_.jpg",
         delivery: "Free Delivery",
@@ -619,7 +619,7 @@ const products = [
         brand: "Marsail"
     },
     {
-        id: 40,
+        id: "cantilever-desk-40",
         name: "Office Hippo Heavy Duty Rectangular Cantilever Desk, 160cm x 80cm, Silver Frame/Beech Top, Home Office Table",
         image: "/images/desk-2.jpg",
         delivery: "Free Delivery",
@@ -634,7 +634,7 @@ const products = [
         brand: "Marsail"
     },
     {
-        id: 41,
+        id: "macBook-max-m4-chip-41",
         name: "MacBook Max A3186 M4 Chip, 48GB RAM, 1TB SSD, MacOS, 16 Inch",
         image: "/images/1733896841_2.jpg",
         delivery: "24 hours",
@@ -648,7 +648,7 @@ const products = [
         brand: "Apple"
     },
     {
-        id: 42,
+        id: "asus-vivobook-16x-42",
         name: "ASUS Vivobook 16X Ryzen 5, 8GB RAM, 512GB SSD, Windows 11 Pro, 16 Inch",
         image: "/images/1692001478_ASUS Vivobook 16X.jpg",
         delivery: "24 hours",
@@ -662,7 +662,7 @@ const products = [
         brand: "Asus"
     },
     {
-        id: 43,
+        id: "dell-5420-laptop-43",
         name: "Dell 5420 Laptop Rental, Core i7 11th Gen, 16GB RAM, 512GB SSD, 14 Inch",
         image: "/images/Untitled-design-3.webp",
         delivery: "24 hours",
@@ -676,7 +676,7 @@ const products = [
         brand: "Dell"
     },
     {
-        id: 44,
+        id: "Lenovo-core-i7-44",
         name: "Lenovo Laptop Rental, Core i7 11th Gen, 16GB RAM, 512GB SSD, 14 Inch",
         image: "/images/laptop-2.webp",
         delivery: "24 hours",
@@ -690,7 +690,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 45,
+        id: "macBook-max-m4-chip-45",
         name: "MacBook Max A3186 M4 Chip, 48GB RAM, 1TB SSD, MacOS, 16 Inch",
         image: "/images/1733896841_2.jpg",
         delivery: "24 hours",
@@ -704,7 +704,7 @@ const products = [
         brand: "Apple"
     },
     {
-        id: 46,
+        id: "asus-vivobook-16x-46",
         name: "ASUS Vivobook 16X Ryzen 5, 8GB RAM, 512GB SSD, Windows 11 Pro, 16 Inch",
         image: "/images/1692001478_ASUS Vivobook 16X.jpg",
         delivery: "24 hours",
@@ -718,7 +718,7 @@ const products = [
         brand: "Asus"
     },
     {
-        id: 47,
+        id: "dell-5420-laptop-47",
         name: "Dell 5420 Laptop Rental, Core i7 11th Gen, 16GB RAM, 512GB SSD, 14 Inch",
         image: "/images/Untitled-design-3.webp",
         delivery: "24 hours",
@@ -732,7 +732,7 @@ const products = [
         brand: "Dell"
     },
     {
-        id: 48,
+        id: "Lenovo-core-i7-48",
         name: "Lenovo Laptop Rental, Core i7 11th Gen, 16GB RAM, 512GB SSD, 14 Inch",
         image: "/images/laptop-2.webp",
         delivery: "24 hours",
@@ -746,7 +746,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 49,
+        id: "ipad-a14-49",
         name: "iPad A2757 A14 Bionic chip / 8 GB / 256 GB / iOS / 10.9 Inches",
         image: "/images/1734514232_air1.png",
         category: "tablet",
@@ -758,7 +758,7 @@ const products = [
         brand: "Apple"
     },
     {
-        id: 50,
+        id: "ipad-a13-50",
         name: "iPad A13 Bionic chip / 8 GB / 64 GB / iOS / 10.2 Inches",
         image: "/images/1694445182_1689595112_iPad 1.jpg",
         category: "tablet",
@@ -770,7 +770,7 @@ const products = [
         brand: "Apple"
     },
     {
-        id: 51,
+        id: "samsung-galaxy-tab-s4-51",
         name: "Samsung Galaxy Tab S4 (Black)",
         image: "/images/bmb430b0-500x500.webp",
         category: "tablet",
@@ -782,7 +782,7 @@ const products = [
         brand: "Samsung"
     },
     {
-        id: 52,
+        id: "ipad-pro-11-52",
         name: "Apple iPad Pro 11 (Space Grey)",
         image: "/images/m2elson6-500x500.webp",
         category: "tablet",
@@ -794,7 +794,7 @@ const products = [
         brand: "Apple"
     },
     {
-        id: 53,
+        id: "ipad-a14-53",
         name: "iPad A2757 A14 Bionic chip / 8 GB / 256 GB / iOS / 10.9 Inches",
         image: "/images/1734514232_air1.png",
         category: "tablet",
@@ -806,7 +806,7 @@ const products = [
         brand: "Apple"
     },
     {
-        id: 54,
+        id: "ipad-a13-54",
         name: "iPad A13 Bionic chip / 8 GB / 64 GB / iOS / 10.2 Inches",
         image: "/images/1694445182_1689595112_iPad 1.jpg",
         category: "tablet",
@@ -818,7 +818,7 @@ const products = [
         brand: "Apple"
     },
     {
-        id: 55,
+        id: "samsung-galaxy-tab-s4-55",
         name: "Samsung Galaxy Tab S4 (Black)",
         image: "/images/bmb430b0-500x500.webp",
         category: "tablet",
@@ -830,7 +830,7 @@ const products = [
         brand: "Samsung"
     },
     {
-        id: 56,
+        id: "ipad-pro-11-56",
         name: "Apple iPad Pro 11 (Space Grey)",
         image: "/images/m2elson6-500x500.webp",
         category: "tablet",
@@ -842,7 +842,7 @@ const products = [
         brand: "Apple"
     },
     {
-        id: 57,
+        id: "23.8-fhd-pc-57",
         name: '23.8" FHD All-in-One PC, i5-12450H, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Windows 11 Pro (Curved)',
         image: "/images/computer-1_.jpg",
         category: "computer",
@@ -854,7 +854,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 58,
+        id: "touchscreen-pc-58",
         name: "All-in-One Touchscreen PC, Quad-Core N95, 16GB RAM, 512GB SSD, 23.8 inch, Pop-up Webcam, WiFi, Bluetooth",
         image: "/images/computerr-2_.jpg",
         category: "computer",
@@ -866,7 +866,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 59,
+        id: "23.8-fhd-pc-59",
         name: '23.8" FHD All-in-One PC, i5-12450H, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Windows 11 Pro (Curved)',
         image: "/images/computerr-3.jpg",
         category: "computer",
@@ -878,7 +878,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 60,
+        id: "desktop-pc-60",
         name: "All-in-One Desktop PC 23.8 Inch Curved Display, Core i7 7700HQ, 16GB RAM, 512GB SSD, WiFi, Bluetooth 5.0",
         image: "/images/computerr-4.jpg",
         category: "computer",
@@ -890,7 +890,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 61,
+        id: "23.8-fhd-pc-61",
         name: '23.8" FHD All-in-One PC, i5-12450H, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Windows 11 Pro (Curved)',
         image: "/images/computer-1_.jpg",
         category: "computer",
@@ -902,7 +902,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 62,
+        id: "touchscreen-pc-62",
         name: "All-in-One Touchscreen PC, Quad-Core N95, 16GB RAM, 512GB SSD, 23.8 inch, Pop-up Webcam, WiFi, Bluetooth",
         image: "/images/computerr-2_.jpg",
         category: "computer",
@@ -914,7 +914,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 63,
+        id: "23.8-fhd-pc-63",
         name: '23.8" FHD All-in-One PC, i5-12450H, 16GB RAM, 256GB SSD, WiFi, Bluetooth, Windows 11 Pro (Curved)',
         image: "/images/computerr-3.jpg",
         category: "computer",
@@ -926,7 +926,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 64,
+        id: "desktop-pc-64",
         name: "All-in-One Desktop PC 23.8 Inch Curved Display, Core i7 7700HQ, 16GB RAM, 512GB SSD, WiFi, Bluetooth 5.0",
         image: "/images/computerr-4.jpg",
         category: "computer",
@@ -938,7 +938,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 65,
+        id: "gaming-monitor-65",
         name: 'BenQ MOBIUZ 27" IPS 165Hz Gaming Monitor | EX2710S',
         image: "/images/monitor_img2.jpg",
         category: "monitor",
@@ -950,7 +950,7 @@ const products = [
         brand: "Lenovo"
     },
     {
-        id: 66,
+        id: "gaming-monitor-66",
         name: 'LG 34" OLED Gaming Monitor | White | 34GX90SA-W',
         image: "/images/monitor_img1.jpg",
         category: "monitor",
@@ -962,7 +962,7 @@ const products = [
         brand: "Lg"
     },
     {
-        id: 67,
+        id: "gaming-monitor-67",
         name: "LG 45'' UltraGear WQHD (3440x1440) 21:9 OLED Curved Gaming Monitor | 45GS95QE-B",
         image: "/images/monitor_img3.jpg",
         category: "monitor",
@@ -974,7 +974,7 @@ const products = [
         brand: "Lg"
     },
     {
-        id: 68,
+        id: "smart-monitor-68",
         name: 'LG 32" 4K UHD IPS Smart Monitor with webOS & Webcam | 32SR85U-W',
         image: "/images/monitor_img4.jpg",
         category: "monitor",
@@ -986,7 +986,7 @@ const products = [
         brand: "Lg"
     },
     {
-        id: 69,
+        id: "gaming-monitor-69",
         name: 'BenQ MOBIUZ 27" IPS 165Hz Gaming Monitor | EX2710S',
         image: "/images/monitor_img2.jpg",
         category: "monitor",
@@ -998,7 +998,7 @@ const products = [
         brand: "BenQ"
     },
     {
-        id: 70,
+        id: "gaming-monitor-70",
         name: 'LG 34" OLED Gaming Monitor | White | 34GX90SA-W',
         image: "/images/monitor_img1.jpg",
         category: "monitor",
@@ -1010,7 +1010,7 @@ const products = [
         brand: "Lg"
     },
     {
-        id: 71,
+        id: "gaming-monitor-71",
         name: "LG 45'' UltraGear WQHD (3440x1440) 21:9 OLED Curved Gaming Monitor | 45GS95QE-B",
         image: "/images/monitor_img3.jpg",
         category: "monitor",
@@ -1022,7 +1022,7 @@ const products = [
         brand: "Lg"
     },
     {
-        id: 72,
+        id: "smart-monitor-72",
         name: 'LG 32" 4K UHD IPS Smart Monitor with webOS & Webcam | 32SR85U-W',
         image: "/images/monitor_img4.jpg",
         category: "monitor",
@@ -1034,7 +1034,7 @@ const products = [
         brand: "Lg"
     },
     {
-        id: 73,
+        id: "inkjet-windows-printer-73",
         name: "Inkjet Windows 7 Copier and Printer On Rent",
         image: "/images/printer-2.webp",
         category: "printer",
@@ -1046,7 +1046,7 @@ const products = [
         brand: "HP"
     },
     {
-        id: 74,
+        id: "black-&-white-printer-74",
         name: "Black & White Printer Machine Rental Service",
         image: "/images/printer-3.jpeg",
         category: "printer",
@@ -1058,7 +1058,7 @@ const products = [
         brand: "HP"
     },
     {
-        id: 75,
+        id: "wifi-colour-printer-75",
         name: "Canon PIXMA E470 All-in-One WiFi Colour Printer (Print/Scan/Copy)",
         image: "/images/printer-4_.jpg",
         category: "printer",
@@ -1070,7 +1070,7 @@ const products = [
         brand: "Canon"
     },
     {
-        id: 76,
+        id: "wifi-colour-printer-76",
         name: "HP Ink Advantage 4278 WiFi Colour Printer with ADF (Home/Office)",
         image: "/images/printer-5_.jpg",
         category: "printer",
@@ -1082,7 +1082,7 @@ const products = [
         brand: "HP"
     },
     {
-        id: 77,
+        id: "inkjet-windows-printer-77",
         name: "Inkjet Windows 7 Copier and Printer On Rent",
         image: "/images/printer-2.webp",
         category: "printer",
@@ -1094,7 +1094,7 @@ const products = [
         brand: "HP"
     },
     {
-        id: 78,
+        id: "black-&-white-printer-78",
         name: "Black & White Printer Machine Rental Service",
         image: "/images/printer-3.jpeg",
         category: "printer",
@@ -1106,7 +1106,7 @@ const products = [
         brand: "HP"
     },
     {
-        id: 79,
+        id: "wifi-colour-printer-79",
         name: "Canon PIXMA E470 All-in-One WiFi Colour Printer (Print/Scan/Copy)",
         image: "/images/printer-4_.jpg",
         category: "printer",
@@ -1118,7 +1118,7 @@ const products = [
         brand: "Canon"
     },
     {
-        id: 80,
+        id: "wifi-colour-printer-80",
         name: "HP Ink Advantage 4278 WiFi Colour Printer with ADF (Home/Office)",
         image: "/images/printer-5_.jpg",
         category: "printer",

@@ -8,7 +8,7 @@ const ProductDetail = () => {
   const navigate = useNavigate();
   const { addToCart } = useContext(CartContext);
 
-  const product = products.find((p) => p.id === parseInt(id));
+  const product = products.find((p) => p.id === id);
 
   const [selectedDuration, setSelectedDuration] = useState("1 Month");
   const [quantity, setQuantity] = useState(1);
