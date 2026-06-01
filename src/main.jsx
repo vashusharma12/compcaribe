@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { registerSW } from "virtual:pwa-register";
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,6 +28,10 @@ import AboutUs from './pages/AboutUs.jsx';
 
 import { CartProvider } from "./context/CartContext";
 import ScrollToTop from "./components/ScrollToTop";
+
+registerSW({
+  immediate: true,
+});
 
 
 const router = createBrowserRouter([
