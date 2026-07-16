@@ -29,6 +29,7 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button{opacity: 1;height: 30px;}
 button:focus{box-shadow:inherit !important;}
 a:focus{box-shadow:inherit !important;}
+.navbar-nav .nav-link.active{color: #ffffff !important;}
 
 .header{width:100%; background:#fff; padding-top:6px;}
 .header .header_top{display:flex; gap:20px; align-items:center;}
